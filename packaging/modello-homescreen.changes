@@ -1,3 +1,8 @@
+* Mon Apr 21 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140417.163457@7c31faa
+- Fix for TIVI-2932 - Modello will now start automatically at boot.  It also sets up the
+  weston.ini file to work with it and disables VGA.  Upon deletion of the package all
+  settings will be restored to their previous state.
+
 * Wed Apr 16 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140416.223008@796ffc4
 - Fixes TIVI-3004.  Now center pie buttons will launch their apps
 

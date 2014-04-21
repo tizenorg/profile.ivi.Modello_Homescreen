@@ -1,0 +1,8 @@
+# Description=Path activation for Modello_Homescreen
+
+[Path]
+PathExists=/run/user/%U/wayland-0
+Unit=Modello_Homescreen.service
+
+[Install]
+WantedBy=weston.target
