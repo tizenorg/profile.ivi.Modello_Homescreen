@@ -1,3 +1,7 @@
+* Mon Apr 21 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140421.221822@b9ca10d
+- Removing weston / kernel changes. They may cause problems with different hardware.
+  User needs to set these manually based on their setup
+
 * Mon Apr 21 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140417.163457@7c31faa
 - Fix for TIVI-2932 - Modello will now start automatically at boot.  It also sets up the
   weston.ini file to work with it and disables VGA.  Upon deletion of the package all
