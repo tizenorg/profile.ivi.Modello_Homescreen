@@ -1,3 +1,6 @@
+* Thu Apr 24 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140422.195849@b2c4efc
+- Adding a delay to the startup script to allow WRT to be ready
+
 * Mon Apr 21 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140421.221822@b9ca10d
 - Removing weston / kernel changes. They may cause problems with different hardware.
   User needs to set these manually based on their setup
