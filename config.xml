@@ -2,8 +2,8 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets"
 	id="http://com.intel.tizen/homescreen" version="1.0.0" viewmodes="fullscreen">
 	<access origin="*" subdomains="true"></access>
-	<tizen:application id="html5POC05.Homescreen"
-		package="html5POC05" required_version="2.1" />
+	<tizen:application id="Modello005.Homescreen"
+		package="Modello005" required_version="2.1" />
 	<content src="index.html" />
 	<icon src="icon.png" />
 	<name>Home Screen</name>

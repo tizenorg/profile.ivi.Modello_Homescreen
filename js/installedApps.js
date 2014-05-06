@@ -127,7 +127,7 @@ function insertAppFrame(appFrame) {
 		var h = ctx.canvas.height = img.height;
 
 		// Change icon only in case of Intel POC apps
-		if (appFrame.id.indexOf("html5POC") >= 0) {
+		if (appFrame.id.indexOf("Modello") >= 0) {
 			ctx.fillStyle = ThemeKeyColor;
 			ctx.fillRect(0, 0, w, h);
 			ctx.globalCompositeOperation = 'destination-in';

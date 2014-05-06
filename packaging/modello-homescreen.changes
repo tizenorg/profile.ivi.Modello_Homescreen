@@ -1,3 +1,6 @@
+* Tue May 06 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140424.181930@b99f7ff
+- Updated to work with Crosswalk.  TIVI-3074
+
 * Thu Apr 24 2014 brianjjones <brian.j.jones@intel.com> submit/tizen/20140422.195849@b2c4efc
 - Adding a delay to the startup script to allow WRT to be ready
 

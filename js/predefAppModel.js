@@ -81,7 +81,7 @@ var areasDefinitions = [ {
 	shape: 'cenerCircle'
 }, {
 	name: 'navigation',
-	id: 'html5POC08.Nav',
+	id: 'Modello008.Nav',
 	iconPath: '../navigation/icon.png',
 	sectorId: 1,
 	sc: 104,
@@ -91,7 +91,7 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: "airconditioning",
-	id: 'html5POC06.Hvac',
+	id: 'Modello006.Hvac',
 	iconPath: '../dashboard/icon.png',
 	sectorId: 2,
 	sc: 94,		//small circle border
@@ -101,7 +101,7 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'MultimediaPlayer',
-	id: 'html5POC07.Multimediaplayer',
+	id: 'Modello007.Multimediaplayer',
 	iconPath: '../musicplayer/icon.png',
 	sectorId: 3,
 	sc: 80,
@@ -111,7 +111,7 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'SmartDeviceLink',
-	id: 'html5POC10.SDL',
+	id: 'Modello010.SDL',
 	iconPath: '../smartdevicelink/icon.png',
 	sectorId: 4,
 	sc: 80,
@@ -121,7 +121,7 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'phone',
-	id: 'html5POC09.Phone',
+	id: 'Modello009.Phone',
 	iconPath: '../phone/icon.png',
 	sectorId: 5,
 	sc: 82,
@@ -131,7 +131,7 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'store',
-	id: 'html5POC03.AppManager',
+	id: 'Modello003.AppManager',
 	iconPath: '../store/icon.png',
 	sectorId: 6,
 	sc: 82,
@@ -141,7 +141,7 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'dashboard',
-	id: 'html5POC04.Dashboard',
+	id: 'Modello004.Dashboard',
 	iconPath: '../dashboard/icon.png',
 	sectorId: 7,
 	sc: 105,
