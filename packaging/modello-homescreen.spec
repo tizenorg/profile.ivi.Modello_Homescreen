@@ -25,3 +25,4 @@ make wgtPkg
 %files
 %defattr(-,root,root,-)
 /opt/usr/apps/.preinstallWidgets/Modello_Homescreen.wgt
+/opt/usr/apps/_common/icons/Homescreen_icon.png

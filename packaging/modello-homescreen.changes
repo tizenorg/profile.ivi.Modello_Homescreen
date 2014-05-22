@@ -1,3 +1,6 @@
+* Thu May 22 2014 brianjjones <brian.j.jones@intel.com> submit/tizen_ivi/20140508.232610@8b497ad
+- Fixes for IVI-3190 - To get things to render normally
+
 * Thu May 08 2014 brianjjones <brian.j.jones@intel.com> submit/tizen_ivi/20140508.172522@617d429
 - Adding Modello to the app name to easily identify it
 
