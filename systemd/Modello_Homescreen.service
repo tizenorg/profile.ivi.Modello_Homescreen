@@ -1,0 +1,8 @@
+[Unit]
+Description=Modello Homescreen
+Requires=weston.service
+After=weston.service
+
+[Service]
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/%U/dbus/user_bus_socket
+ExecStart=/usr/bin/modello_launcher.sh --user app

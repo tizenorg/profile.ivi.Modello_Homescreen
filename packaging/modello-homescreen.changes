@@ -1,3 +1,6 @@
+* Thu Jun 05 2014 brianjjones <brian.j.jones@intel.com> accepted/tizen/ivi/20140526.131006@dabff47
+- Fix for TIVI-3114.  Refactor Modello to start at launch with Xwalk
+
 * Thu May 22 2014 brianjjones <brian.j.jones@intel.com> submit/tizen_ivi/20140508.232610@8b497ad
 - Fixes for IVI-3190 - To get things to render normally
 
