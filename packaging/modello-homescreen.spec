@@ -31,7 +31,7 @@ make wgtPkg
 %files
 %defattr(-,root,root,-)
 /opt/usr/apps/.preinstallWidgets/Modello_Homescreen.wgt
-/opt/usr/apps/_common/icons/Homescreen_icon.png
+/opt/usr/apps/_common/icons/Home_Screen_icon.png
 %{_libdir}/systemd/user/Modello_Homescreen.service
 %{_libdir}/systemd/user/Modello_Homescreen-launchpad-ready.path
 %{_bindir}/modello_launcher.sh
