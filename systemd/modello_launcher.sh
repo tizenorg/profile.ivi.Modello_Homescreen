@@ -1,4 +1,4 @@
 #!/bin/sh
 
-aul_test launch xwalk.gomjednplfobbadlpflcmcglndlenbep
+open_app xwalk.gomjednplfobbadlpflcmcglndlenbep
 #xwalk-launcher gomjednplfobbadlpflcmcglndlenbep -f
