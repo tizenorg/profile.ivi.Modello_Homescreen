@@ -49,6 +49,7 @@ $(function() {
  **/
 function onLaunchSuccess() {
 	"use strict";
+	tizen.application.getCurrentApplication().hide();
 	console.log("App launched...");
 }
 
