@@ -1,3 +1,6 @@
+* Wed Aug 06 2014 Brian Jones <brian.j.jones@intel.com> accepted/tizen/ivi/20140702.153400-1-g90fae66
+- Updating manifest to use xwalk_version instead of version - TC-1465
+
 * Thu Jun 05 2014 brianjjones <brian.j.jones@intel.com> accepted/tizen/ivi/20140526.131006@dabff47
 - Fix for TIVI-3114.  Refactor Modello to start at launch with Xwalk
 
