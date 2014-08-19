@@ -5,7 +5,7 @@
 	<tizen:application id="Modello005.Homescreen"
 		package="Modello005" required_version="2.1" />
 	<content src="index.html" />
-	<icon src="icon.png" />
+	<icon src="Homescreen_icon.png" />
 	<name>Modello Homescreen</name>
 	<tizen:privilege name="http://tizen.org/privilege/application.launch" />
 	<tizen:privilege name="http://tizen.org/privilege/filesystem.read" />
