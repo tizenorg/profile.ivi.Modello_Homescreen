@@ -81,8 +81,8 @@ var areasDefinitions = [ {
 	shape: 'cenerCircle'
 }, {
 	name: 'navigation',
-	id: 'xwalk.epacfkhfnnlaamkbaiedmohaeogbedkf',
-	iconPath: '../navigation/icon.png',
+	id: 'Modello008.Nav',
+	iconPath: '../icons/Navigation_icon.png',
 	sectorId: 1,
 	sc: 104,
 	lc: 497,
@@ -91,8 +91,8 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: "airconditioning",
-	id: 'xwalk.fmpbbfhmnlghfghbblcobiiedfbjgegp',
-	iconPath: '../dashboard/icon.png',
+	id: 'Modello006.Hvac',
+	iconPath: '../icons/Dashboard_icon.png',
 	sectorId: 2,
 	sc: 94,		//small circle border
 	lc: 437,	//large circle border
@@ -101,8 +101,8 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'MultimediaPlayer',
-	id: 'xwalk.ilflnmejfmcdcdnjjgejnfbhhbfaaefb',
-	iconPath: '../musicplayer/icon.png',
+	id: 'Modello007.Multimediaplayer',
+	iconPath: '../icons/Multimedia_Player_icon.png',
 	sectorId: 3,
 	sc: 80,
 	lc: 392,
@@ -111,8 +111,8 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'SmartDeviceLink',
-	id: 'xwalk.kiefmdieeelkgmnjldgklhlemjdkgpbm',
-	iconPath: '../smartdevicelink/icon.png',
+	id: 'Modello010.SDL',
+	iconPath: '../icons/SmartDeviceLink_icon.png',
 	sectorId: 4,
 	sc: 80,
 	lc: 384,
@@ -121,8 +121,8 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'phone',
-	id: 'xwalk.nejoidhifdhhbogkaoimdcalkmllicab',
-	iconPath: '../phone/icon.png',
+	id: 'Modello009.Phone',
+	iconPath: '../apps/Phone_icon.png',
 	sectorId: 5,
 	sc: 82,
 	lc: 364,
@@ -131,8 +131,8 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'store',
-	id: 'xwalk.ofalfnmcoplngiipflmdhdegilbfepoh',
-	iconPath: '../store/icon.png',
+	id: 'Modello003.AppManager',
+	iconPath: '../icons/AppManager_icon.png',
 	sectorId: 6,
 	sc: 82,
 	lc: 364,
@@ -141,8 +141,8 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'dashboard',
-	id: 'xwalk.knojblgeighiodojgihegbmkbbadfpnk',
-	iconPath: '../dashboard/icon.png',
+	id: 'Modello004.Dashboard',
+	iconPath: '../icons/Dashboard_icon.png',
 	sectorId: 7,
 	sc: 105,
 	lc: 433,

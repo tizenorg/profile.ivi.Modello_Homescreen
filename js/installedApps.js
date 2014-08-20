@@ -247,7 +247,7 @@ function onAppInfoSuccess(list) {
  **/
 evalInstalledApps = function() {
 	"use strict";
-	if (typeof tizen !== 'undefined') {
+	if (typeof (tizen.application.getAppsInfo) !== 'undefined') {
 		try {
 			// get the installed applications list
 			tizen.application.getAppsInfo(onAppInfoSuccess, function(err) {
