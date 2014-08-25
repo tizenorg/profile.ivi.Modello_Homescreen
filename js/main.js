@@ -45,6 +45,8 @@ var animationOngoing = false;
 var init = function() {
     "use strict";
 
+    setPieAppIDs();
+
     bootstrap = new Bootstrap(function(status) {
         $('#dateTime').ClockPlugin('init', 60);
         $('#dateTime').ClockPlugin('startTimer');

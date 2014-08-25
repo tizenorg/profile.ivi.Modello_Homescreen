@@ -1,3 +1,9 @@
+* Mon Aug 25 2014 Brian Jones <brian.j.jones@intel.com> accepted/tizen/ivi/20140821.133919-1-geec5ebe
+- Adding code to get the app ID from tizen.application for the center tiles rather than hardcode
+
+* Wed Aug 20 2014 Brian Jones <brian.j.jones@intel.com> submit/tizen_ivi/20140819.215807-1-g45081aa
+- Updating tizen api checks to avoid failure if they don't exist
+
 * Tue Aug 19 2014 Brian Jones <brian.j.jones@intel.com> submit/tizen_3.0.m14.2_ivi/20140723.000001-3-g1933e57
 - Matching config.xml icon name to the one in the .wgt file
 

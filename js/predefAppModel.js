@@ -69,6 +69,7 @@ var centerPoint = {x: 360, y: 675};
  * @property la
  * @type int
  **/
+
 var areasDefinitions = [ {
 	name: 'center',
 	id: null,
@@ -81,7 +82,6 @@ var areasDefinitions = [ {
 	shape: 'cenerCircle'
 }, {
 	name: 'navigation',
-	id: 'Modello008.Nav',
 	iconPath: '../icons/Navigation_icon.png',
 	sectorId: 1,
 	sc: 104,
@@ -91,7 +91,6 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: "airconditioning",
-	id: 'Modello006.Hvac',
 	iconPath: '../icons/Dashboard_icon.png',
 	sectorId: 2,
 	sc: 94,		//small circle border
@@ -101,7 +100,6 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'MultimediaPlayer',
-	id: 'Modello007.Multimediaplayer',
 	iconPath: '../icons/Multimedia_Player_icon.png',
 	sectorId: 3,
 	sc: 80,
@@ -111,7 +109,6 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'SmartDeviceLink',
-	id: 'Modello010.SDL',
 	iconPath: '../icons/SmartDeviceLink_icon.png',
 	sectorId: 4,
 	sc: 80,
@@ -121,7 +118,6 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'phone',
-	id: 'Modello009.Phone',
 	iconPath: '../apps/Phone_icon.png',
 	sectorId: 5,
 	sc: 82,
@@ -131,7 +127,6 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'store',
-	id: 'Modello003.AppManager',
 	iconPath: '../icons/AppManager_icon.png',
 	sectorId: 6,
 	sc: 82,
@@ -141,7 +136,6 @@ var areasDefinitions = [ {
 	shape: 'pieWithoutCenter'
 }, {
 	name: 'dashboard',
-	id: 'Modello004.Dashboard',
 	iconPath: '../icons/Dashboard_icon.png',
 	sectorId: 7,
 	sc: 105,
@@ -150,3 +144,51 @@ var areasDefinitions = [ {
 	la:	160,
 	shape: 'pieWithoutCenter'
 } ];
+
+function fillAppIDs (appList)
+{
+    for (i = 0; i < appList.length; i++)
+    {
+        var app = appList[i];
+        if (app.name.indexOf('Modello') >= 0)
+        {
+            switch (app.name)
+            {
+                case "Modello Navigation":
+                    areasDefinitions[1].id = app.id;
+                break;
+
+                case "Modello HVAC":
+                    areasDefinitions[2].id = app.id;
+                break;
+
+                case "Modello Multimedia Player":
+                    areasDefinitions[3].id = app.id;
+                break;
+
+                case "Modello SmartDeviceLink":
+                    areasDefinitions[4].id = app.id;
+                break;
+
+                case "Modello Phone":
+                    areasDefinitions[5].id = app.id;
+                break;
+
+                case "Modello AppManager":
+                    areasDefinitions[6].id = app.id;
+                break;
+
+                case "Modello Dashboard":
+                    areasDefinitions[7].id = app.id;
+                break;
+            }
+        }
+    }
+}
+
+function setPieAppIDs ()
+{
+    tizen.application.getAppsInfo(fillAppIDs, function(err) {
+        console.log("Modello failed to get app IDs for center icons");
+    });
+}
