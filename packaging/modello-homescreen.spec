@@ -26,7 +26,7 @@ make wgtPkg
     install -m 755 systemd/modello_launcher.sh %{buildroot}%{_bindir}
     install -m 0644 systemd/Modello_Homescreen-launchpad-ready.path %{buildroot}%{_libdir}/systemd/user
     install -m 0644 systemd/Modello_Homescreen.service %{buildroot}%{_libdir}/systemd/user
-    ln -sf systemd/Modello_Homescreen-launchpad-ready.path %{buildroot}%{_libdir}/systemd/user/weston.target.wants/
+    ln -sf ../Modello_Homescreen-launchpad-ready.path %{buildroot}%{_libdir}/systemd/user/weston.target.wants/
 
 %files
 %defattr(-,root,root,-)
