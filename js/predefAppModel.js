@@ -154,31 +154,31 @@ function fillAppIDs (appList)
         {
             switch (app.name)
             {
-                case "Modello Navigation":
+                case "ModelloNavigation":
                     areasDefinitions[1].id = app.id;
                 break;
 
-                case "Modello HVAC":
+                case "ModelloHVAC":
                     areasDefinitions[2].id = app.id;
                 break;
 
-                case "Modello Multimedia Player":
+                case "ModelloMultimediaPlayer":
                     areasDefinitions[3].id = app.id;
                 break;
 
-                case "Modello SmartDeviceLink":
+                case "ModelloSmartDeviceLink":
                     areasDefinitions[4].id = app.id;
                 break;
 
-                case "Modello Phone":
+                case "ModelloPhone":
                     areasDefinitions[5].id = app.id;
                 break;
 
-                case "Modello AppManager":
+                case "ModelloAppManager":
                     areasDefinitions[6].id = app.id;
                 break;
 
-                case "Modello Dashboard":
+                case "ModelloDashboard":
                     areasDefinitions[7].id = app.id;
                 break;
             }
