@@ -23,17 +23,17 @@ A proof of concept pure html5 UI
     install -m 0644 Homescreen_icon.png %{buildroot}%{_datadir}/Modello/Common/icons
 
     mkdir -p %{buildroot}%{_bindir}
-    mkdir -p %{buildroot}%{_libdir}/systemd/user/weston.target.wants/
+    mkdir -p %{buildroot}%{_unitdir_user}/weston.target.wants/
     install -m 755 systemd/modello_launcher.sh %{buildroot}%{_bindir}
-    install -m 0644 systemd/Modello_Homescreen-launchpad-ready.path %{buildroot}%{_libdir}/systemd/user
-    install -m 0644 systemd/Modello_Homescreen.service %{buildroot}%{_libdir}/systemd/user
-    ln -sf ../Modello_Homescreen-launchpad-ready.path %{buildroot}%{_libdir}/systemd/user/weston.target.wants/
+    install -m 0644 systemd/Modello_Homescreen-launchpad-ready.path %{buildroot}%{_unitdir_user}
+    install -m 0644 systemd/Modello_Homescreen.service %{buildroot}%{_unitdir_user}
+    ln -sf ../Modello_Homescreen-launchpad-ready.path %{buildroot}%{_unitdir_user}/weston.target.wants/
 
 %files
 %defattr(-,root,root,-)
 %{TZ_SYS_APP_PREINSTALL}/Modello_Homescreen.wgt
 %{_datadir}/Modello/Common/icons/Homescreen_icon.png
-%{_libdir}/systemd/user/Modello_Homescreen.service
-%{_libdir}/systemd/user/Modello_Homescreen-launchpad-ready.path
+%{_unitdir_user}/Modello_Homescreen.service
+%{_unitdir_user}/Modello_Homescreen-launchpad-ready.path
 %{_bindir}/modello_launcher.sh
-%{_libdir}/systemd/user/weston.target.wants
+%{_unitdir_user}/weston.target.wants
