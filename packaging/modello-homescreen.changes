@@ -1,3 +1,6 @@
+* Wed Sep 10 2014 Brian Jones <brian.j.jones@intel.com> accepted/tizen/ivi/20140828.212836-1-g6742024
+- Removing space in app name - Fix for TC-1404
+
 * Mon Aug 25 2014 Brian Jones <brian.j.jones@intel.com> accepted/tizen/ivi/20140821.133919-1-geec5ebe
 - Adding code to get the app ID from tizen.application for the center tiles rather than hardcode
 
