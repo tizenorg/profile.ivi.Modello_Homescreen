@@ -1,20 +1,28 @@
-Name:       Modello_Homescreen
+Name:       Modello-Homescreen
 Summary:    A proof of concept pure html5 UI
 Version:    0.0.2
-Release:    1
-Group:      Applications/System
-License:    Apache 2.0
+Release:    0
+Group:      Automotive/Modello
+License:    Apache-2.0
 URL:        http://www.tizen.org
 Source0:    %{name}-%{version}.tar.bz2
-BuildRequires:  zip
-Requires:   Modello_Common
+Source1001: Modello-Homescreen.manifest
+
+BuildRequires: zip
 BuildRequires: pkgconfig(libtzplatform-config)
+Requires:      Modello-Common
+
+BuildArchitectures: noarch
 
 %description
-A proof of concept pure html5 UI
+A proof of concept pure html5 UI files
 
 %prep
 %setup -q -n %{name}-%{version}
+cp %{SOURCE1001} .
+
+%build
+#empty
 
 %install
     mkdir -p %{buildroot}%{TZ_SYS_APP_PREINSTALL}
@@ -31,7 +39,7 @@ A proof of concept pure html5 UI
 
 %files
 %defattr(-,root,root,-)
-%{TZ_SYS_APP_PREINSTALL}/Modello_Homescreen.wgt
+%{TZ_SYS_APP_PREINSTALL}/%{name}.wgt
 %{_datadir}/Modello/Common/icons/Homescreen_icon.png
 %{_unitdir_user}/Modello_Homescreen.service
 %{_unitdir_user}/Modello_Homescreen-launchpad-ready.path
