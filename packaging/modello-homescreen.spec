@@ -8,6 +8,7 @@ URL:        http://www.tizen.org
 Source0:    %{name}-%{version}.tar.bz2
 BuildRequires:  zip
 Requires:   Modello_Common
+BuildRequires: pkgconfig(libtzplatform-config)
 
 %description
 A proof of concept pure html5 UI
@@ -15,12 +16,12 @@ A proof of concept pure html5 UI
 %prep
 %setup -q -n %{name}-%{version}
 
-%build
-
-make wgtPkg
-
 %install
-    %make_install
+    mkdir -p %{buildroot}%{TZ_SYS_APP_PREINSTALL}
+    mkdir -p %{buildroot}%{_datadir}/Modello/Common/icons
+    zip -r %{buildroot}%{TZ_SYS_APP_PREINSTALL}/%{name}.wgt config.xml manifest.json css Homescreen_icon.png index.html js
+    install -m 0644 Homescreen_icon.png %{buildroot}%{_datadir}/Modello/Common/icons
+
     mkdir -p %{buildroot}%{_bindir}
     mkdir -p %{buildroot}%{_libdir}/systemd/user/weston.target.wants/
     install -m 755 systemd/modello_launcher.sh %{buildroot}%{_bindir}
@@ -30,8 +31,8 @@ make wgtPkg
 
 %files
 %defattr(-,root,root,-)
-/opt/usr/apps/.preinstallWidgets/Modello_Homescreen.wgt
-/opt/usr/apps/_common/icons/Homescreen_icon.png
+%{TZ_SYS_APP_PREINSTALL}/Modello_Homescreen.wgt
+%{_datadir}/Modello/Common/icons/Homescreen_icon.png
 %{_libdir}/systemd/user/Modello_Homescreen.service
 %{_libdir}/systemd/user/Modello_Homescreen-launchpad-ready.path
 %{_bindir}/modello_launcher.sh
