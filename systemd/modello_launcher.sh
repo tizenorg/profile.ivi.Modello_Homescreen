@@ -1,3 +1,3 @@
 #!/bin/sh
 
-open_app Modello005.Homescreen
+app_launcher -s Modello005.Homescreen
