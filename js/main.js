@@ -84,27 +84,26 @@ var init = function() {
 
     });
 
+    var checkAnimationConfig = function() {
+        var animation = Configuration.get("animationEnabled");
+        if (animation === undefined || animation) {
+            $(".rollRight").css("-webkit-animation-play-state", "running");
+            $(".rollLeft").css("-webkit-animation-play-state", "running");
+            $(".liveBg").css("-webkit-animation-play-state", "running");
+        } else {
+            $(".rollRight").css("-webkit-animation-play-state", "paused");
+            $(".rollLeft").css("-webkit-animation-play-state", "paused");
+            $(".liveBg").css("-webkit-animation-play-state", "paused");
+        }
+    };
+
     /* fixed webkit animation bugs */
     window.setTimeout(function() {
-        window.setInterval(function() {
-            $("#innerRing").removeClass("rollLeft");
-            $("#outerRing").removeClass("rollRight");
-            window.setTimeout(function() {
-                $("#innerRing").addClass("rollLeft");
-                $("#outerRing").addClass("rollRight");
-            }, 50);
-
-        }, 10000);
-   }, 1000);
-    window.setTimeout(function() {
-        window.setInterval(function() {
-          $('#wrapper .step9').removeClass('liveBg');
-            window.setTimeout(function() {
-                $('#wrapper .step9').addClass('liveBg');
-            }, 50);
-
-        }, 7000);
-    }, 500);
+        checkAnimationConfig();
+        Configuration.addUpdateListener(function() {
+            checkAnimationConfig();
+        });
+    }, 1000);
     /* end fixed webkit animation bugs */
 };
 

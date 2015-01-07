@@ -484,7 +484,8 @@
     -webkit-animation-duration: 10s;
     -webkit-animation-delay: 0s;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;/*infinite;*/
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: paused;
 }
 
 .rollLeft {
@@ -492,7 +493,8 @@
     -webkit-animation-duration: 10s;
     -webkit-animation-delay: 0s;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;/*infinite;*/
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: paused;
 }
 
 .liveBg {
@@ -500,8 +502,9 @@
     -webkit-animation-duration: 7s;
     -webkit-animation-delay: 0s;
     -webkit-animation-timing-function: ease-out;
-    -webkit-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: infinite;
     -webkit-transition: opacity 500ms ease-out;
+    -webkit-animation-play-state: paused;
 }
 
 @-webkit-keyframes rotateR {

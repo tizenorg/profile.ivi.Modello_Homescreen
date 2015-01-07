@@ -1,3 +1,6 @@
+* Wed Jan 07 2015 Jimmy Huang <jimmy.huang@intel.com> accepted/tizen/ivi/20141112.110519-1-g9a41e9e
+- Add support to disable/enable Homescreen animation
+
 * Tue Oct 07 2014 Brian Jones <brian.j.jones@intel.com> submit/tizen_ivi/20141007.175535-1-g0b3ff06
 - Fix systemd install path on 64-bit architecture
 - use systemd macro for path.
